@@ -1,3 +1,12 @@
+#
+# @lc app=leetcode id=1 lang=python3
+#
+# [1] Two Sum
+#
+# https://leetcode.com/problems/two-sum/
+#
+
+# @lc code=start
 class Solution:
     def twoSum(self, nums: list[int], target: int) -> list[int]:
         map={}
@@ -6,3 +15,5 @@ class Solution:
                 return [map[target-x],i]
             else:
                 map[x]=i
+
+# @lc code=end
