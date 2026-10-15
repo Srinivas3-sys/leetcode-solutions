@@ -14,7 +14,7 @@ class Solution:
         dp.append(1)
         dp.append(1)
         for i in range(3,n+1,1):
-            y=dp[i-1]+dp[i-2]+dp[i-3]
+            y=sum(dp[-3:])
             dp.append(y)
         return dp[n]
 # @lc code=end
